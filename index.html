@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonobo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0a0a0a;
+      color: #e5e5e5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 480px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: #a3a3a3;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #262626;
+      margin-bottom: 2rem;
+    }
+
+    .download-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #737373;
+      margin-bottom: 1rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.625rem;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1.125rem;
+      background: #171717;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      color: #e5e5e5;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .btn:hover {
+      background: #222;
+      border-color: #404040;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🐒</div>
+    <h1>Bonobo is private</h1>
+    <p class="subtitle">
+      This network runs on a private Tailscale tailnet.<br>
+      Download Tailscale and log in to connect.
+    </p>
+    <hr class="divider">
+    <p class="download-label">Get Tailscale</p>
+    <div class="buttons">
+      <a class="btn" href="https://apps.apple.com/app/tailscale/id1475387142" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        iOS
+      </a>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.tailscale.ipn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M3.18 23.49c.18.34.53.51.9.51.17 0 .34-.04.5-.13L12 19.74l7.42 4.13c.16.09.33.13.5.13.37 0 .72-.17.9-.51.27-.49.1-1.1-.38-1.38L13.22 18l7.22-4.02c.48-.27.65-.88.38-1.38-.27-.49-.88-.65-1.38-.38L12 16.26 4.56 12.2c-.49-.27-1.1-.1-1.38.38-.27.49-.1 1.1.38 1.38L10.78 18l-7.22 4.02c-.48.27-.65.88-.38 1.38v.09zM12 2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1s1-.45 1-1V3c0-.55-.45-1-1-1z"/></svg>
+        Android
+      </a>
+      <a class="btn" href="https://tailscale.com/download/windows" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48L3 12zm17-9v8.75l-10 .08V5.21L20 3zm-10 9.32l10-.08V21l-10-1.24V12.32zM3 12.25l6 .08v6.35l-6-1.07V12.25z"/></svg>
+        Windows
+      </a>
+      <a class="btn" href="https://tailscale.com/download/mac" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        macOS
+      </a>
+      <a class="btn" href="https://tailscale.com/download/linux" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12.5 2c-1.54 0-2.79 1.23-2.84 2.75-.04 1.14.48 2.13 1.34 2.7v.8l-3.5 2.1A2.5 2.5 0 005 12.84V14a2.5 2.5 0 00-2 2.45V19a2.5 2.5 0 002.5 2.5h2A2.5 2.5 0 0010 19v-2.55A2.5 2.5 0 008 14v-.59l3-1.8v1.14a2.5 2.5 0 00-1 2V19a2.5 2.5 0 002.5 2.5h2A2.5 2.5 0 0017 19v-4.25a2.5 2.5 0 00-1-2v-1.14l3 1.8V14a2.5 2.5 0 00-2 2.45V19a2.5 2.5 0 002.5 2.5h2A2.5 2.5 0 0024 19v-2.55A2.5 2.5 0 0022 14v-1.16a2.5 2.5 0 00-2.5-2.49h-.08L16 8.25v-.8a2.84 2.84 0 001.34-2.7A2.84 2.84 0 0014.5 2h-2zM5.5 16h2v3h-2v-3zm6 0h2v3h-2v-3zm6 0h2v3h-2v-3z"/></svg>
+        Linux
+      </a>
+    </div>
+  </div>
+</body>
+</html>
